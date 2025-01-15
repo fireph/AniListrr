@@ -27,11 +27,12 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add filtered_anime.json
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update filtered_anime.json"
             git push
           else
             echo "No changes to commit."
+          fi
