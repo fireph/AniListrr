@@ -123,7 +123,7 @@ def main():
     print(sonarr_list)
 
     with open("filtered_anime.json", "w", encoding="utf-8") as f:
-        json.dump(sonarr_list, f, indent=2)
+        json.dump(sonarr_list, f, separators=(',', ':'))
 
 if __name__ == "__main__":
     main()
