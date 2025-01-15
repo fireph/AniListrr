@@ -29,7 +29,7 @@ def get_current_season_and_year():
 
     return season, year
 
-def get_seasonal_anime_ids(year, season, limit=100, min_score=7.5, min_votes=1000):
+def get_seasonal_anime_ids(year, season, limit=100, min_score=7.7, min_votes=1000):
     """
     Fetch top 'limit' anime from MyAnimeList for a given season and year,
     filtered by min_score and min_votes.
@@ -108,7 +108,7 @@ def main():
     print(f"Detected {season.capitalize()} {year} as the current anime season.")
     
     # 2. Get MAL IDs of anime meeting the criteria
-    mal_ids = get_seasonal_anime_ids(year, season, limit=100, min_score=7.5, min_votes=1000)
+    mal_ids = get_seasonal_anime_ids(year, season, limit=100, min_score=7.7, min_votes=1000)
     print(f"Found {len(mal_ids)} anime IDs that match the score/vote criteria.")
     
     # 2. Convert those MAL IDs to TVDB IDs
