@@ -86,7 +86,7 @@ def filter_anime_entries(entries, min_score=7.7, min_votes=1000, media_type_filt
     return filtered_ids_and_titles
 
 def create_mal_to_db_mapping():
-    mapping_url = "https://raw.githubusercontent.com/Fribb/anime-lists/refs/heads/master/anime-list-full.json"
+    mapping_url = "https://raw.githubusercontent.com/Fribb/anime-lists/refs/heads/master/anime-list-mini.json"
     response = requests.get(mapping_url)
     response.raise_for_status()
 
