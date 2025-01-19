@@ -29,110 +29,163 @@ def get_current_season_and_year():
 
     return season, year
 
-def get_seasonal_anime_ids_and_titles(year, season, limit=100, min_score=7.7, min_votes=1000):
+def get_seasonal_anime(year, season, limit=100):
     """
-    Fetch top 'limit' anime from MyAnimeList for a given season and year,
-    filtered by min_score and min_votes.
-    Returns a list of MAL anime IDs.
+    Fetch up to 'limit' anime from MyAnimeList for a given season and year.
+    Returns the raw list of anime data from the MAL response.
     """
-
-    # 1. Construct the seasonal anime endpoint
-    # Add fields=mean,scored_by so we can filter by score and votes in a single request
     url = f"https://api.myanimelist.net/v2/anime/season/{year}/{season}"
     params = {
         "sort": "anime_score",
         "limit": limit,
-        "fields": "mean,num_scoring_users"
+        # Request the media_type field so we can distinguish between "tv", "movie", etc.
+        "fields": "mean,num_scoring_users,media_type"
     }
 
-    # Read MAL Client ID from environment variable
+    # Retrieve MAL Client ID from environment variable
     mal_client_id = os.environ.get("MAL_CLIENT_ID", "")
     if not mal_client_id:
         raise ValueError("MAL_CLIENT_ID environment variable is not set!")
 
-    # 2. Make the request to MAL
     headers = {
         "X-MAL-CLIENT-ID": mal_client_id
     }
-    response = requests.get(url, headers=headers, params=params)
 
-    # Raise an exception if the request failed
+    response = requests.get(url, headers=headers, params=params)
     response.raise_for_status()
 
     data = response.json()
 
-    # 3. Filter anime based on score and number of votes
+    # Return the "data" list for further filtering
+    return data.get("data", [])
+
+def filter_anime_entries(entries, min_score=7.7, min_votes=1000, media_type_filter=None):
+    """
+    Given a list of MAL anime entries, filter them by:
+      - Minimum score
+      - Minimum number of votes
+      - Optional media_type (e.g., "movie" for anime movies)
+    Returns a list of MAL IDs.
+    """
     filtered_ids_and_titles = []
-    for entry in data.get("data", []):
+    for entry in entries:
         anime_data = entry.get("node", {})
         mal_id = anime_data.get("id")
         score = float(anime_data.get("mean", 0))
         title = anime_data.get("title")
         num_scoring_users = int(anime_data.get("num_scoring_users", 0))
+        media_type = anime_data.get("media_type", "").lower()  # "tv", "movie", etc.
+
+        # If media_type_filter is specified, skip entries that don't match
+        if media_type_filter and media_type != media_type_filter.lower():
+            continue
 
         if score >= min_score and num_scoring_users >= min_votes:
             filtered_ids_and_titles.append([mal_id, title])
 
     return filtered_ids_and_titles
 
-def map_mal_to_tvdb(mal_ids_and_titles):
-    """
-    Given a list of MAL IDs, map them to TVDB IDs by using the YAML mapping
-    from varoOP/shinkro-mapping on GitHub.
-    """
-
-    # 1. Fetch the YAML mapping from GitHub
-    mapping_url = "https://raw.githubusercontent.com/varoOP/shinkro-mapping/refs/heads/main/tvdb-mal.yaml"
+def create_mal_to_db_mapping():
+    mapping_url = "https://raw.githubusercontent.com/Fribb/anime-lists/refs/heads/master/anime-list-full.json"
     response = requests.get(mapping_url)
     response.raise_for_status()
 
-    # 2. Load YAML data
-    data = yaml.safe_load(response.text)
+    # Parse the JSON (it’s an array of objects)
+    data = response.json()  # This will be a list of dicts
 
-    # Convert the YAML list into a dict { malid: tvdbid, ... }
-    # Some YAMLs might store malid as strings, but typically these are integers
-    # We'll unify everything as int to avoid mismatch.
-    anime_map = data.get("AnimeMap", [])
-    mal_to_tvdb_map = {int(item["malid"]): item["tvdbid"] for item in anime_map if "malid" in item and "tvdbid" in item}
+    # Create a dict mapping MAL ID -> DB field (if present)
+    mal_to_db_map = {}
+    for item in data:
+        # Each item has "mal_id", "thetvdb_id", "themoviedb_id", etc.
+        # Some entries might not have a valid 'mal_id' or the requested db field
+        if "mal_id" in item:
+            mal_id = item.get("mal_id")
+            tvdb_id = item.get("thetvdb_id")
+            tmdb_id = item.get("themoviedb_id")
+            if mal_id is not None and (tvdb_id is not None or tmdb_id is not None):
+                mal_to_db_map[int(mal_id)] = {
+                    "tvdb_id": tvdb_id,
+                    "tmdb_id": tmdb_id
+                }
 
-    # 3. Map each MAL ID to TVDB ID (if it exists in the YAML)
-    tvdb_ids = []
+    return mal_to_db_map
+
+def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
+    """
+    Given a list of MAL IDs, map them to the IDs of indicated DB by using the YAML mapping
+    from varoOP/shinkro-mapping on GitHub.
+    """
+
+    # Map each MAL ID to DB ID (if it exists in the YAML)
+    db_ids = []
     found_titles = []
     unknown_titles = []
     for mal_id, title in mal_ids_and_titles:
-        if mal_id in mal_to_tvdb_map:
-            tvdb_ids.append(mal_to_tvdb_map[mal_id])
-            found_titles.append(title)
+        dbs = mal_to_db_map.get(int(mal_id))
+        if dbs is not None:
+            db_id = dbs.get(f"{db}_id")
+            if db_id is not None:
+                db_ids.append(db_id)
+                found_titles.append(title)
+            else:
+                unknown_titles.append(title)
         else:
             unknown_titles.append(title)
 
-    print(f"Found tvdb mappings for: {found_titles}")
+    print(f"Found {db} mappings for: {found_titles}")
     if (len(unknown_titles) > 0):
-        print(f"Could not find tvdb mappings for: {unknown_titles}!")
-    return tvdb_ids
+        print(f"Could not find {db} mappings for: {unknown_titles}!")
+    return db_ids
 
 def main():
-    # 1. Get the current season and year
+    # Get the current season and year
     season, year = get_current_season_and_year()
     print(f"Detected {season.capitalize()} {year} as the current anime season.")
 
-    # 2. Get MAL IDs of anime meeting the criteria
-    mal_ids_and_titles = get_seasonal_anime_ids_and_titles(year, season, limit=100, min_score=7.7, min_votes=1000)
-    print(f"Found {len(mal_ids_and_titles)} anime IDs that match the score/vote criteria.")
+    mal_to_db_map = create_mal_to_db_mapping()
 
-    # 2. Convert those MAL IDs to TVDB IDs
-    tvdb_ids = map_mal_to_tvdb(mal_ids_and_titles)
+    # Fetch raw data for the current season
+    raw_entries = get_seasonal_anime(year, season, limit=100)
+
+    # Filter anime TV
+    tv_mal_ids_and_titles = filter_anime_entries(
+        raw_entries,
+        min_score=7.5,
+        min_votes=1000,
+        media_type_filter="tv"
+    )
+    tvdb_ids = map_mal_to_db(tv_mal_ids_and_titles, mal_to_db_map, "tvdb")
+    print(f"Found {len(tvdb_ids)} TV anime IDs that match the score/vote criteria.")
+
+    # Filter anime movies
+    movies_mal_ids_and_titles = filter_anime_entries(
+        raw_entries,
+        min_score=7.5,
+        min_votes=1000,
+        media_type_filter="movie"
+    )
+    tmdb_ids_movies = map_mal_to_db(movies_mal_ids_and_titles, mal_to_db_map, "tmdb")
+    print(f"Found {len(tmdb_ids_movies)} movies anime IDs that match the score/vote criteria.")
 
     sonarr_list = []
     for tvdb_id in tvdb_ids:
         sonarr_list.append({"tvdbId": tvdb_id})
 
-    # 3. Print the final list of TVDB IDs
-    print("TVDB IDs that passed the filter:")
-    print(sonarr_list)
+    # Print the final list of TVDB IDs
+    print(f"TVDB IDs that passed the filter: {sonarr_list}")
 
     with open("filtered_anime.json", "w", encoding="utf-8") as f:
         json.dump(sonarr_list, f, separators=(',', ':'))
+
+    radarr_list = []
+    for tmdb_id in tmdb_ids_movies:
+        radarr_list.append({"id": tmdb_id})
+
+    # Print the final list of TMDB IDs
+    print(f"TMDB IDs that passed the filter: {radarr_list}")
+
+    with open("filtered_anime_movies.json", "w", encoding="utf-8") as f:
+        json.dump(radarr_list, f, separators=(',', ':'))
 
 if __name__ == "__main__":
     main()
