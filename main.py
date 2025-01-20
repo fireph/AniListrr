@@ -4,14 +4,18 @@ import yaml
 import json
 from datetime import datetime
 
-def get_current_season_and_year():
+def get_current_season_and_year(neg_seasons=0):
     """
     Returns the current anime season ('winter', 'spring', 'summer', or 'fall')
     and the current year as integers.
     """
     now = datetime.now()
-    month = now.month
+    month = now.month - (neg_seasons * 3)
     year = now.year
+
+    if month < 1:
+        month = 12 + month
+        year = year - 1
 
     # Define season by month:
     #   winter: 1,2,3
@@ -138,14 +142,16 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
     return db_ids
 
 def main():
-    # Get the current season and year
-    season, year = get_current_season_and_year()
-    print(f"Detected {season.capitalize()} {year} as the current anime season.")
-
     mal_to_db_map = create_mal_to_db_mapping()
 
-    # Fetch raw data for the current season
-    raw_entries = get_seasonal_anime(year, season, limit=100)
+    # get anime of the last 4 seasons
+    raw_entries = []
+    for i in range(4):
+        season, year = get_current_season_and_year(i)
+        print(f"Processing {season.capitalize()} {year} anime season...")
+        # Fetch and extend raw entries with the current season's data
+        season_entries = get_seasonal_anime(year, season, limit=100)
+        raw_entries.extend(season_entries)
 
     # Filter anime TV
     tv_mal_ids_and_titles = filter_anime_entries(
