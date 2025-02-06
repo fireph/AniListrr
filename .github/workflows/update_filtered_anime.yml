@@ -31,9 +31,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add filtered_anime.json
+          git add filtered_anime.* filtered_anime_movies.*
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update filtered_anime.json"
+            git commit -m "Auto-update filtered_anime tv/movies"
             git push
           else
             echo "No changes to commit."
