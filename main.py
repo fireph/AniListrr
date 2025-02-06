@@ -121,25 +121,25 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
     """
 
     # Map each MAL ID to DB ID (if it exists in the YAML)
-    db_ids = []
+    db_ids = set()
     found_titles = []
     unknown_titles = []
     for mal_id, title in mal_ids_and_titles:
         dbs = mal_to_db_map.get(int(mal_id))
         if dbs is not None:
             db_id = dbs.get(f"{db}_id")
-            if db_id is not None:
-                db_ids.append(db_id)
-                found_titles.append(title)
-            else:
+            if db_id is None:
                 unknown_titles.append(title)
+            elif db_id not in db_ids:
+                db_ids.add(db_id)
+                found_titles.append(title)
         else:
             unknown_titles.append(title)
 
     print(f"Found {db} mappings for: {found_titles}")
     if (len(unknown_titles) > 0):
         print(f"Could not find {db} mappings for: {unknown_titles}!")
-    return db_ids, found_titles
+    return list(db_ids), found_titles
 
 def main():
     mal_to_db_map = create_mal_to_db_mapping()
