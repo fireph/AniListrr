@@ -184,7 +184,7 @@ def main():
         json.dump(sonarr_list, f, separators=(',', ':'))
 
     with open("filtered_anime.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(tv_titles))
+        f.write("\n".join(sorted(tv_titles)))
 
     radarr_list = []
     for tmdb_id in tmdb_ids_movies:
@@ -197,7 +197,7 @@ def main():
         json.dump(radarr_list, f, separators=(',', ':'))
 
     with open("filtered_anime_movies.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(movie_titles))
+        f.write("\n".join(sorted(movie_titles)))
 
 if __name__ == "__main__":
     main()
