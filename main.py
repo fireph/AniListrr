@@ -139,7 +139,7 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
     print(f"Found {db} mappings for: {found_titles}")
     if (len(unknown_titles) > 0):
         print(f"Could not find {db} mappings for: {unknown_titles}!")
-    return db_ids
+    return db_ids, found_titles
 
 def main():
     mal_to_db_map = create_mal_to_db_mapping()
@@ -160,7 +160,7 @@ def main():
         min_votes=1000,
         media_type_filter="tv"
     )
-    tvdb_ids = map_mal_to_db(tv_mal_ids_and_titles, mal_to_db_map, "tvdb")
+    tvdb_ids, tv_titles = map_mal_to_db(tv_mal_ids_and_titles, mal_to_db_map, "tvdb")
     print(f"Found {len(tvdb_ids)} TV anime IDs that match the score/vote criteria.")
 
     # Filter anime movies
@@ -170,7 +170,7 @@ def main():
         min_votes=1000,
         media_type_filter="movie"
     )
-    tmdb_ids_movies = map_mal_to_db(movies_mal_ids_and_titles, mal_to_db_map, "tmdb")
+    tmdb_ids_movies, movie_titles = map_mal_to_db(movies_mal_ids_and_titles, mal_to_db_map, "tmdb")
     print(f"Found {len(tmdb_ids_movies)} movies anime IDs that match the score/vote criteria.")
 
     sonarr_list = []
@@ -183,6 +183,9 @@ def main():
     with open("filtered_anime.json", "w", encoding="utf-8") as f:
         json.dump(sonarr_list, f, separators=(',', ':'))
 
+    with open("filtered_anime.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(tv_titles))
+
     radarr_list = []
     for tmdb_id in tmdb_ids_movies:
         radarr_list.append({"id": tmdb_id})
@@ -192,6 +195,9 @@ def main():
 
     with open("filtered_anime_movies.json", "w", encoding="utf-8") as f:
         json.dump(radarr_list, f, separators=(',', ':'))
+
+    with open("filtered_anime_movies.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(movie_titles))
 
 if __name__ == "__main__":
     main()
