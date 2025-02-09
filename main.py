@@ -131,7 +131,7 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
             if db_id is None:
                 unknown_titles.append(title)
             elif db_id not in db_ids:
-                db_ids.add(db_id)
+                db_ids.add(int(db_id))
                 found_titles.append(title)
         else:
             unknown_titles.append(title)
