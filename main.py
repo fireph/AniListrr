@@ -174,7 +174,7 @@ def main():
     print(f"Found {len(tmdb_ids_movies)} movies anime IDs that match the score/vote criteria.")
 
     sonarr_list = []
-    for tvdb_id in tvdb_ids:
+    for tvdb_id in sorted(tvdb_ids):
         sonarr_list.append({"tvdbId": tvdb_id})
 
     # Print the final list of TVDB IDs
@@ -187,7 +187,7 @@ def main():
         f.write("\n".join(sorted(tv_titles)))
 
     radarr_list = []
-    for tmdb_id in tmdb_ids_movies:
+    for tmdb_id in sorted(tmdb_ids_movies):
         radarr_list.append({"id": tmdb_id})
 
     # Print the final list of TMDB IDs
