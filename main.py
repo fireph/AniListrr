@@ -175,7 +175,7 @@ def main():
 
     sonarr_list = []
     for tvdb_id in sorted(tvdb_ids):
-        sonarr_list.append({"tvdbId": tvdb_id})
+        sonarr_list.append({"tvdbId": str(tvdb_id)})
 
     # Print the final list of TVDB IDs
     print(f"TVDB IDs that passed the filter: {sonarr_list}")
@@ -188,7 +188,7 @@ def main():
 
     radarr_list = []
     for tmdb_id in sorted(tmdb_ids_movies):
-        radarr_list.append({"id": tmdb_id})
+        radarr_list.append({"id": str(tmdb_id)})
 
     # Print the final list of TMDB IDs
     print(f"TMDB IDs that passed the filter: {radarr_list}")
