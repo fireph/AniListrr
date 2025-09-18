@@ -160,8 +160,20 @@ def main():
         min_votes=1000,
         media_type_filter="tv"
     )
-    tvdb_ids, tv_titles = map_mal_to_db(tv_mal_ids_and_titles, mal_to_db_map, "tvdb")
-    print(f"Found {len(tvdb_ids)} TV anime IDs that match the score/vote criteria.")
+
+    # Filter anime ONA
+    ona_mal_ids_and_titles = filter_anime_entries(
+        raw_entries,
+        min_score=7.7,
+        min_votes=1000,
+        media_type_filter="ona"
+    )
+
+    # Combine TV and ONA entries
+    combined_mal_ids_and_titles = tv_mal_ids_and_titles + ona_mal_ids_and_titles
+
+    tvdb_ids, tv_titles = map_mal_to_db(combined_mal_ids_and_titles, mal_to_db_map, "tvdb")
+    print(f"Found {len(tvdb_ids)} TV/ONA anime IDs that match the score/vote criteria.")
 
     # Filter anime movies
     movies_mal_ids_and_titles = filter_anime_entries(
