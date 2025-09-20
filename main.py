@@ -156,7 +156,7 @@ def main():
     # Filter anime TV
     tv_mal_ids_and_titles = filter_anime_entries(
         raw_entries,
-        min_score=7.7,
+        min_score=7.8,
         min_votes=1000,
         media_type_filter="tv"
     )
@@ -164,7 +164,7 @@ def main():
     # Filter anime ONA
     ona_mal_ids_and_titles = filter_anime_entries(
         raw_entries,
-        min_score=7.7,
+        min_score=7.8,
         min_votes=1000,
         media_type_filter="ona"
     )
