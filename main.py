@@ -104,7 +104,7 @@ def create_mal_to_db_mapping():
         # Some entries might not have a valid 'mal_id' or the requested db field
         if "mal_id" in item:
             mal_id = item.get("mal_id")
-            tvdb_id = item.get("thetvdb_id")
+            tvdb_id = item.get("tvdb_id")
             tmdb_id = item.get("themoviedb_id")
             if mal_id is not None and (tvdb_id is not None or tmdb_id is not None):
                 mal_to_db_map[int(mal_id)] = {
@@ -126,15 +126,17 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
     unknown_titles = []
     for mal_id, title in mal_ids_and_titles:
         dbs = mal_to_db_map.get(int(mal_id))
+        prefix_str = str(mal_id) + "->?" + ": "
         if dbs is not None:
             db_id = dbs.get(f"{db}_id")
+            prefix_str = str(mal_id) + "->" + str(db_id) + ": "
             if db_id is None:
-                unknown_titles.append(title)
+                unknown_titles.append(prefix_str + title)
             elif db_id not in db_ids:
                 db_ids.add(int(db_id))
-                found_titles.append(title)
+                found_titles.append(prefix_str + title)
         else:
-            unknown_titles.append(title)
+            unknown_titles.append(prefix_str + title)
 
     print(f"Found {db} mappings for: {found_titles}")
     if (len(unknown_titles) > 0):
@@ -196,7 +198,7 @@ def main():
         json.dump(sonarr_list, f, separators=(',', ':'))
 
     with open("filtered_anime.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted(tv_titles)))
+        f.write("MAL->TVDB: Title\n" + "\n".join(sorted(tv_titles)))
 
     radarr_list = []
     for tmdb_id in sorted(tmdb_ids_movies):
@@ -209,7 +211,7 @@ def main():
         json.dump(radarr_list, f, separators=(',', ':'))
 
     with open("filtered_anime_movies.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted(movie_titles)))
+        f.write("MAL->TMDB: Title\n" + "\n".join(sorted(movie_titles)))
 
 if __name__ == "__main__":
     main()

@@ -1,2 +1,3 @@
-Chainsaw Man Movie: Reze-hen
-Jujutsu Kaisen: Kaigyoku/Gyokusetsu
+MAL->TMDB: Title
+57555->1218925: Chainsaw Man Movie: Reze-hen
+59654->1338799: Jujutsu Kaisen: Kaigyoku/Gyokusetsu
