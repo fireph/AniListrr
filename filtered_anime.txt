@@ -41,6 +41,7 @@ MAL->TVDB: Title
 60602->414207: MF Ghost 3rd Season
 61274->465427: Ginga Tokkyuu Milky☆Subway
 61322->355774: Dr. Stone: Science Future Part 2
+61335->433953: Medalist 2nd Season
 61339->368364: Jibaku Shounen Hanako-kun 2 Part 2
 61517->259635: Kingdom 6th Season
 61930->453673: Uma Musume: Cinderella Gray Part 2
