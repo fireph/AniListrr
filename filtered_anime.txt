@@ -13,13 +13,11 @@ MAL->TVDB: Title
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 58390->412374: Yofukashi no Uta Season 2
 58514->431162: Kusuriya no Hitorigoto 2nd Season
-58749->411800: Arknights: Rise from Ember
 58788->449723: Ikoku Nikki
 58913->450428: Hikaru ga Shinda Natsu
 59027->405920: Spy x Family Season 3
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
-59205->451793: Clevatess: Majuu no Ou to Akago to Shikabane no Yuusha
 59228->83996: Kuroshitsuji: Midori no Majo-hen
 59229->355480: Enen no Shouboutai: San no Shou Part 2
 59360->452456: Rock wa Lady no Tashinami deshite
