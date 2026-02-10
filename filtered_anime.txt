@@ -19,10 +19,8 @@ MAL->TVDB: Title
 59228->83996: Kuroshitsuji: Midori no Majo-hen
 59229->355480: Enen no Shouboutai: San no Shou Part 2
 59360->452456: Rock wa Lady no Tashinami deshite
-59791->454330: Ruri no Houseki
 59828->444609: Shoushimin Series 2nd Season
 59845->454524: Kaoru Hana wa Rin to Saku
-59898->454726: City The Animation
 59978->424536: Sousou no Frieren 2nd Season
 59986->343913: Grand Blue Season 2
 60058->421069: [Oshi no Ko] 3rd Season
@@ -34,7 +32,6 @@ MAL->TVDB: Title
 60602->414207: MF Ghost 3rd Season
 61322->355774: Dr. Stone: Science Future Part 2
 61335->433953: Medalist 2nd Season
-61339->368364: Jibaku Shounen Hanako-kun 2 Part 2
 61517->259635: Kingdom 6th Season
 61930->453673: Uma Musume: Cinderella Gray Part 2
 62405->467641: Fujimoto Tatsuki 17-26
