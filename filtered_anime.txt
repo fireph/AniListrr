@@ -21,7 +21,6 @@ MAL->TVDB: Title
 59205->451793: Clevatess: Majuu no Ou to Akago to Shikabane no Yuusha
 59228->83996: Kuroshitsuji: Midori no Majo-hen
 59229->355480: Enen no Shouboutai: San no Shou Part 2
-59360->452456: Rock wa Lady no Tashinami deshite
 59459->452832: Silent Witch: Chinmoku no Majo no Kakushigoto
 59791->454330: Ruri no Houseki
 59828->444609: Shoushimin Series 2nd Season
