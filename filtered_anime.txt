@@ -40,6 +40,7 @@ MAL->TVDB: Title
 61322->355774: Dr. Stone: Science Future Part 2
 61335->433953: Medalist 2nd Season
 61339->368364: Jibaku Shounen Hanako-kun 2 Part 2
+61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61517->259635: Kingdom 6th Season
 61930->453673: Uma Musume: Cinderella Gray Part 2
 62405->467641: Fujimoto Tatsuki 17-26
