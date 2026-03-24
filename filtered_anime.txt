@@ -35,7 +35,6 @@ MAL->TVDB: Title
 60427->457372: Gnosia
 60489->457645: Takopii no Genzai
 60543->432832: Dandadan 2nd Season
-60602->414207: MF Ghost 3rd Season
 61159->461118: Toujima Tanzaburou wa Kamen Rider ni Naritai
 61274->465427: Ginga Tokkyuu Milky☆Subway
 61322->355774: Dr. Stone: Science Future Part 2
