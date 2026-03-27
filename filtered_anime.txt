@@ -29,7 +29,6 @@ MAL->TVDB: Title
 59986->343913: Grand Blue Season 2
 60058->421069: [Oshi no Ko] 3rd Season
 60098->305074: Boku no Hero Academia: Final Season
-60285->423732: Sakamoto Days Part 2
 60334->456902: Anne Shirley
 60371->457078: Seihantai na Kimi to Boku
 60427->457372: Gnosia
