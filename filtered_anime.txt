@@ -23,6 +23,7 @@ MAL->TVDB: Title
 59791->454330: Ruri no Houseki
 59845->454524: Kaoru Hana wa Rin to Saku
 59898->454726: City The Animation
+59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
 59986->343913: Grand Blue Season 2
 60058->421069: [Oshi no Ko] 3rd Season
