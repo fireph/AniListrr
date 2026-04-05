@@ -43,6 +43,7 @@ MAL->TVDB: Title
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61517->259635: Kingdom 6th Season
 61930->453673: Uma Musume: Cinderella Gray Part 2
+62164->466488: Akane-banashi
 62405->467641: Fujimoto Tatsuki 17-26
 63019->470980: Prism Rondo
 966->79654: Crayon Shin-chan
