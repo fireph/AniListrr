@@ -2,6 +2,7 @@ MAL->TVDB: Title
 21->81797: One Piece
 235->72454: Meitantei Conan
 49818->464419: Guimi Zhi Zhu: Xiaochou Pian
+51553->418666: Tongari Boushi no Atelier
 53065->401233: Sono Bisque Doll wa Koi wo Suru Season 2
 53447->459453: Tu Bian Yingxiong X
 55772->338455: Golden Kamuy: Saishuushou
@@ -45,4 +46,5 @@ MAL->TVDB: Title
 62164->466488: Akane-banashi
 62405->467641: Fujimoto Tatsuki 17-26
 63019->470980: Prism Rondo
+63375->473228: Nippon Sangoku
 966->79654: Crayon Shin-chan
