@@ -46,7 +46,6 @@ MAL->TVDB: Title
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
 61339->368364: Jibaku Shounen Hanako-kun 2 Part 2
-61443->462446: Shunkashuutou Daikousha: Haru no Mai
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61517->259635: Kingdom 6th Season
 61930->453673: Uma Musume: Cinderella Gray Part 2
