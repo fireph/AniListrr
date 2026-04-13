@@ -30,6 +30,7 @@ MAL->TVDB: Title
 59898->454726: City The Animation
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
+59983->445829: Tsue to Tsurugi no Wistoria Season 2
 59986->343913: Grand Blue Season 2
 60058->421069: [Oshi no Ko] 3rd Season
 60098->305074: Boku no Hero Academia: Final Season
