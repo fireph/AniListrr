@@ -10,7 +10,6 @@ MAL->TVDB: Title
 55830->436779: Fate/strange Fake
 56009->437266: Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku
 56734->440057: Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta
-56876->414221: Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken 2
 57433->345596: Seishun Buta Yarou wa Santa Claus no Yume wo Minai
 57466->366263: Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
@@ -18,7 +17,6 @@ MAL->TVDB: Title
 58390->412374: Yofukashi no Uta Season 2
 58788->449723: Ikoku Nikki
 58877->273005: Diamond no Ace: Act II Second Season
-58913->450428: Hikaru ga Shinda Natsu
 59027->405920: Spy x Family Season 3
 59062->450537: Gachiakuta
 59229->355480: Enen no Shouboutai: San no Shou Part 2
