@@ -114,7 +114,7 @@ def create_mal_to_db_mapping():
 
     return mal_to_db_map
 
-def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
+def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb", media_type="tv"):
     """
     Given a list of MAL IDs, map them to the IDs of indicated DB by using the YAML mapping
     from varoOP/shinkro-mapping on GitHub.
@@ -129,12 +129,16 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb"):
         prefix_str = str(mal_id) + "->?" + ": "
         if dbs is not None:
             db_id = dbs.get(f"{db}_id")
-            prefix_str = str(mal_id) + "->" + str(db_id) + ": "
+            if isinstance(db_id, dict):
+                db_id = db_id.get(media_type)
             if db_id is None:
                 unknown_titles.append(prefix_str + title)
-            elif db_id not in db_ids:
-                db_ids.add(int(db_id))
-                found_titles.append(prefix_str + title)
+            else:
+                db_id_str = str(db_id)
+                prefix_str = str(mal_id) + "->" + db_id_str + ": "
+                if db_id_str not in db_ids:
+                    db_ids.add(db_id_str)
+                    found_titles.append(prefix_str + title)
         else:
             unknown_titles.append(prefix_str + title)
 
@@ -184,7 +188,7 @@ def main():
         min_votes=1000,
         media_type_filter="movie"
     )
-    tmdb_ids_movies, movie_titles = map_mal_to_db(movies_mal_ids_and_titles, mal_to_db_map, "tmdb")
+    tmdb_ids_movies, movie_titles = map_mal_to_db(movies_mal_ids_and_titles, mal_to_db_map, "tmdb", media_type="movie")
     print(f"Found {len(tmdb_ids_movies)} movies anime IDs that match the score/vote criteria.")
 
     sonarr_list = []
