@@ -23,7 +23,6 @@ MAL->TVDB: Title
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
 59205->451793: Clevatess: Majuu no Ou to Akago to Shikabane no Yuusha
-59229->355480: Enen no Shouboutai: San no Shou Part 2
 59459->452832: Silent Witch: Chinmoku no Majo no Kakushigoto
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59791->454330: Ruri no Houseki
@@ -38,14 +37,12 @@ MAL->TVDB: Title
 60285->423732: Sakamoto Days Part 2
 60310->369144: Mairimashita! Iruma-kun 4th Season
 60334->456902: Anne Shirley
-60371->457078: Seihantai na Kimi to Boku
 60427->457372: Gnosia
 60489->457645: Takopii no Genzai
 60543->432832: Dandadan 2nd Season
 60602->414207: MF Ghost 3rd Season
 60726->458692: My Melody & Kuromi
 60852->459627: Koori no Jouheki
-61159->461118: Toujima Tanzaburou wa Kamen Rider ni Naritai
 61274->465427: Ginga Tokkyuu Milky☆Subway
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
@@ -59,5 +56,4 @@ MAL->TVDB: Title
 62568->355774: Dr. Stone: Science Future Part 3
 63019->470980: Prism Rondo
 63375->473228: Nippon Sangoku
-8687->281405: Doraemon (2005)
 966->79654: Crayon Shin-chan
