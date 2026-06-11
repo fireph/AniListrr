@@ -20,7 +20,6 @@ MAL->TVDB: Title
 59027->405920: Spy x Family Season 3
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
-59229->355480: Enen no Shouboutai: San no Shou Part 2
 59459->452832: Silent Witch: Chinmoku no Majo no Kakushigoto
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59791->454330: Ruri no Houseki
