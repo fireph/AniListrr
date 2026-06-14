@@ -20,6 +20,7 @@ MAL->TVDB: Title
 59027->405920: Spy x Family Season 3
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
+59229->355480: Enen no Shouboutai: San no Shou Part 2
 59459->452832: Silent Witch: Chinmoku no Majo no Kakushigoto
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59791->454330: Ruri no Houseki
@@ -48,7 +49,6 @@ MAL->TVDB: Title
 61930->453673: Uma Musume: Cinderella Gray Part 2
 62001->452711: Yomi no Tsugai
 62164->466488: Akane-banashi
-62405->467641: Fujimoto Tatsuki 17-26
 62568->355774: Dr. Stone: Science Future Part 3
 63019->470980: Prism Rondo
 63375->473228: Nippon Sangoku
