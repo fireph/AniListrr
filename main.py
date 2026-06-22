@@ -134,7 +134,8 @@ def map_mal_to_db(mal_ids_and_titles, mal_to_db_map, db="tvdb", media_type="tv")
             if db_id is None:
                 unknown_titles.append(prefix_str + title)
             else:
-                db_id_str = str(db_id)
+                # Some mapping entries wrap IDs in brackets (e.g. "[1218925]"), strip them for valid Radarr/Sonarr output
+                db_id_str = str(db_id).strip("[]")
                 prefix_str = str(mal_id) + "->" + db_id_str + ": "
                 if db_id_str not in db_ids:
                     db_ids.add(db_id_str)
