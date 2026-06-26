@@ -39,7 +39,6 @@ MAL->TVDB: Title
 60489->457645: Takopii no Genzai
 60543->432832: Dandadan 2nd Season
 60726->458692: My Melody & Kuromi
-60852->459627: Koori no Jouheki
 61274->465427: Ginga Tokkyuu Milky☆Subway
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
