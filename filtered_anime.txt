@@ -15,7 +15,6 @@ MAL->TVDB: Title
 59027->405920: Spy x Family Season 3
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
-59229->355480: Enen no Shouboutai: San no Shou Part 2
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
@@ -25,6 +24,7 @@ MAL->TVDB: Title
 60310->369144: Mairimashita! Iruma-kun 4th Season
 60371->457078: Seihantai na Kimi to Boku
 60427->457372: Gnosia
+60602->414207: MF Ghost 3rd Season
 60852->459627: Koori no Jouheki
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
