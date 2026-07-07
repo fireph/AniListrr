@@ -3,7 +3,6 @@ MAL->TVDB: Title
 235->72454: Meitantei Conan
 51553->418666: Tongari Boushi no Atelier
 55772->338455: Golden Kamuy: Saishuushou
-55830->436779: Fate/strange Fake
 56009->437266: Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku
 56734->440057: Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta
 57466->366263: Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo
@@ -13,6 +12,7 @@ MAL->TVDB: Title
 59027->405920: Spy x Family Season 3
 59062->450537: Gachiakuta
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
+59229->355480: Enen no Shouboutai: San no Shou Part 2
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
