@@ -4,6 +4,7 @@ MAL->TVDB: Title
 49233->315500: Youjo Senki II
 51553->418666: Tongari Boushi no Atelier
 55772->338455: Golden Kamuy: Saishuushou
+55825->402474: Jigokuraku 2nd Season
 55830->436779: Fate/strange Fake
 56009->437266: Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku
 56734->440057: Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta
@@ -14,7 +15,6 @@ MAL->TVDB: Title
 58877->273005: Diamond no Ace: Act II Second Season
 58929->450475: Koukaku Kidoutai (TV)
 59027->405920: Spy x Family Season 3
-59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
