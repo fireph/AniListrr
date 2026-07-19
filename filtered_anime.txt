@@ -37,7 +37,6 @@ MAL->TVDB: Title
 61930->453673: Uma Musume: Cinderella Gray Part 2
 62001->452711: Yomi no Tsugai
 62076->465973: Super no Ura de Yani Suu Futari
-62164->466488: Akane-banashi
 62405->467641: Fujimoto Tatsuki 17-26
 62542->343913: Grand Blue Season 3
 62568->355774: Dr. Stone: Science Future Part 3
