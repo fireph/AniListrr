@@ -7,7 +7,6 @@ MAL->TVDB: Title
 55825->402474: Jigokuraku 2nd Season
 55830->436779: Fate/strange Fake
 56009->437266: Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku
-56734->440057: Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta
 57466->366263: Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 57779->370761: Dorohedoro Season 2
