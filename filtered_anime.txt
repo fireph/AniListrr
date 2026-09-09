@@ -24,7 +24,6 @@ MAL->TVDB: Title
 60058->421069: [Oshi no Ko] 3rd Season
 60098->305074: Boku no Hero Academia: Final Season
 60310->369144: Mairimashita! Iruma-kun 4th Season
-60371->457078: Seihantai na Kimi to Boku
 60427->457372: Gnosia
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
 60852->459627: Koori no Jouheki
@@ -34,13 +33,16 @@ MAL->TVDB: Title
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61483->462561: Tenmaku no Jaadugar
 61517->259635: Kingdom 6th Season
+61607->402033: Shiguang Dailiren III
 61930->453673: Uma Musume: Cinderella Gray Part 2
 62001->452711: Yomi no Tsugai
 62076->465973: Super no Ura de Yani Suu Futari
 62164->466488: Akane-banashi
 62542->343913: Grand Blue Season 3
 62568->355774: Dr. Stone: Science Future Part 3
+62811->432050: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season
 62936->470520: Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.
 63019->470980: Prism Rondo
 63375->473228: Nippon Sangoku
+63832->457078: Seihantai na Kimi to Boku 2nd Season
 966->79654: Crayon Shin-chan
