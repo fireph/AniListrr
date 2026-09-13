@@ -27,6 +27,7 @@ MAL->TVDB: Title
 60427->457372: Gnosia
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
 60852->459627: Koori no Jouheki
+61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
