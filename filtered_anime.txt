@@ -10,13 +10,12 @@ MAL->TVDB: Title
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 57779->370761: Dorohedoro Season 2
 58788->449723: Ikoku Nikki
-58877->273005: Diamond no Ace: Act II Second Season
+58929->450475: Koukaku Kidoutai (TV)
 59027->405920: Spy x Family Season 3
 59047->451101: Tamon-kun Ima Docchi!?
 59062->450537: Gachiakuta
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
-59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
 59983->445829: Tsue to Tsurugi no Wistoria Season 2
@@ -28,6 +27,7 @@ MAL->TVDB: Title
 60852->459627: Koori no Jouheki
 61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
+61280->461714: Kore Kaite Shine
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61335->433953: Medalist 2nd Season
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
@@ -41,6 +41,7 @@ MAL->TVDB: Title
 62405->467641: Fujimoto Tatsuki 17-26
 62542->343913: Grand Blue Season 3
 62568->355774: Dr. Stone: Science Future Part 3
+62811->432050: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season
 62936->470520: Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.
 63019->470980: Prism Rondo
 63375->473228: Nippon Sangoku
