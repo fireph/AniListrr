@@ -11,7 +11,6 @@ MAL->TVDB: Title
 57779->370761: Dorohedoro Season 2
 58788->449723: Ikoku Nikki
 58877->273005: Diamond no Ace: Act II Second Season
-58929->450475: Koukaku Kidoutai (TV)
 59047->451101: Tamon-kun Ima Docchi!?
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
@@ -22,7 +21,6 @@ MAL->TVDB: Title
 60310->369144: Mairimashita! Iruma-kun 4th Season
 60427->457372: Gnosia
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
-60852->459627: Koori no Jouheki
 61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
 61280->461714: Kore Kaite Shine
@@ -41,4 +39,5 @@ MAL->TVDB: Title
 63019->470980: Prism Rondo
 63375->473228: Nippon Sangoku
 63832->457078: Seihantai na Kimi to Boku 2nd Season
+64534->459627: Koori no Jouheki 2nd Season
 966->79654: Crayon Shin-chan
