@@ -25,6 +25,7 @@ MAL->TVDB: Title
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
 61280->461714: Kore Kaite Shine
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
+61323->429934: Ao no Hako Season 2
 61335->433953: Medalist 2nd Season
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61483->462561: Tenmaku no Jaadugar
