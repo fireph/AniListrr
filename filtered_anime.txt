@@ -10,10 +10,12 @@ MAL->TVDB: Title
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 57779->370761: Dorohedoro Season 2
 58788->449723: Ikoku Nikki
+58877->273005: Diamond no Ace: Act II Second Season
 58929->450475: Koukaku Kidoutai (TV)
 59047->451101: Tamon-kun Ima Docchi!?
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
+59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
 59978->424536: Sousou no Frieren 2nd Season
 59983->445829: Tsue to Tsurugi no Wistoria Season 2
@@ -33,6 +35,7 @@ MAL->TVDB: Title
 61987->431162: Kusuriya no Hitorigoto 3rd Season
 62001->452711: Yomi no Tsugai
 62076->465973: Super no Ura de Yani Suu Futari
+62164->466488: Akane-banashi
 62513->451793: Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou
 62542->343913: Grand Blue Season 3
 62568->355774: Dr. Stone: Science Future Part 3
