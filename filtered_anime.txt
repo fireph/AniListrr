@@ -32,6 +32,7 @@ MAL->TVDB: Title
 61469->262954: Steel Ball Run: JoJo no Kimyou na Bouken
 61483->462561: Tenmaku no Jaadugar
 61607->402033: Shiguang Dailiren III
+61967->331753: Black Clover 2nd Season
 61987->431162: Kusuriya no Hitorigoto 3rd Season
 62001->452711: Yomi no Tsugai
 62076->465973: Super no Ura de Yani Suu Futari
