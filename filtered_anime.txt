@@ -1,7 +1,6 @@
 MAL->TVDB: Title
 21->81797: One Piece
 235->72454: Meitantei Conan
-49233->315500: Youjo Senki II
 51553->418666: Tongari Boushi no Atelier
 55772->338455: Golden Kamuy: Saishuushou
 55825->402474: Jigokuraku 2nd Season
@@ -10,7 +9,6 @@ MAL->TVDB: Title
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 57779->370761: Dorohedoro Season 2
 58788->449723: Ikoku Nikki
-58929->450475: Koukaku Kidoutai (TV)
 59047->451101: Tamon-kun Ima Docchi!?
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
@@ -24,7 +22,6 @@ MAL->TVDB: Title
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
 61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
-61280->461714: Kore Kaite Shine
 61316->305089: Re:Zero kara Hajimeru Isekai Seikatsu 4th Season
 61323->429934: Ao no Hako Season 2
 61335->433953: Medalist 2nd Season
@@ -37,7 +34,6 @@ MAL->TVDB: Title
 62001->452711: Yomi no Tsugai
 62076->483430: Super no Ura de Yani Suu Futari
 62164->466488: Akane-banashi
-62513->451793: Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou
 62542->343913: Grand Blue Season 3
 62568->355774: Dr. Stone: Science Future Part 3
 62811->432050: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season
