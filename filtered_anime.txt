@@ -12,7 +12,6 @@ MAL->TVDB: Title
 58788->449723: Ikoku Nikki
 58877->273005: Diamond no Ace: Act II Second Season
 58929->450475: Koukaku Kidoutai (TV)
-59047->451101: Tamon-kun Ima Docchi!?
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
 59708->329822: Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki
@@ -21,7 +20,6 @@ MAL->TVDB: Title
 59983->445829: Tsue to Tsurugi no Wistoria Season 2
 60058->421069: [Oshi no Ko] 3rd Season
 60310->369144: Mairimashita! Iruma-kun 4th Season
-60427->457372: Gnosia
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
 61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
@@ -35,6 +33,7 @@ MAL->TVDB: Title
 61607->402033: Shiguang Dailiren III
 61967->331753: Black Clover 2nd Season
 61987->431162: Kusuriya no Hitorigoto 3rd Season
+61990->384541: Cyberpunk: Edgerunners 2
 62001->452711: Yomi no Tsugai
 62076->483430: Super no Ura de Yani Suu Futari
 62164->466488: Akane-banashi
@@ -45,6 +44,7 @@ MAL->TVDB: Title
 62936->470520: Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.
 63019->470980: Prism Rondo
 63293->472641: Hotaru no Yomeiri
+63367->473154: Dragon Ball Super: Beerus
 63375->473228: Nippon Sangoku
 63832->457078: Seihantai na Kimi to Boku 2nd Season
 64534->459627: Koori no Jouheki 2nd Season
