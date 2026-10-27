@@ -12,6 +12,8 @@ MAL->TVDB: Title
 58788->449723: Ikoku Nikki
 58877->273005: Diamond no Ace: Act II Second Season
 58929->450475: Koukaku Kidoutai (TV)
+59047->451101: Tamon-kun Ima Docchi!?
+59088->393478: Tokyo Revengers: Santen Sensou-hen
 59193->371310: Mushoku Tensei III: Isekai Ittara Honki Dasu
 59229->355480: Enen no Shouboutai: San no Shou Part 2
 59970->352408: Tensei shitara Slime Datta Ken 4th Season
@@ -19,6 +21,7 @@ MAL->TVDB: Title
 59983->445829: Tsue to Tsurugi no Wistoria Season 2
 60058->421069: [Oshi no Ko] 3rd Season
 60310->369144: Mairimashita! Iruma-kun 4th Season
+60427->457372: Gnosia
 60636->74796: Bleach: Sennen Kessen-hen - Kashin-tan
 61048->460501: Neko to Ryuu
 61240->461544: Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den
@@ -38,6 +41,7 @@ MAL->TVDB: Title
 62164->466488: Akane-banashi
 62513->451793: Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou
 62542->343913: Grand Blue Season 3
+62568->355774: Dr. Stone: Science Future Part 3
 62811->432050: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season
 62936->470520: Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.
 63019->470980: Prism Rondo
