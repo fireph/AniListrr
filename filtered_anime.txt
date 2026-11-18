@@ -4,9 +4,11 @@ MAL->TVDB: Title
 49233->315500: Youjo Senki II
 51553->418666: Tongari Boushi no Atelier
 55772->338455: Golden Kamuy: Saishuushou
+55809->433335: Xian Ni
 55825->402474: Jigokuraku 2nd Season
 55830->436779: Fate/strange Fake
 56009->437266: Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku
+56524->392226: Tunshi Xingkong 4th Season
 57658->377543: Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen
 57779->370761: Dorohedoro Season 2
 58788->449723: Ikoku Nikki
